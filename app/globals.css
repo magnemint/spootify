@@ -2,32 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  height: 100%;
+  background-color: black;
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media (min-width: 768px) {
+  #main-content {
+    width: 98.5%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (min-width: 930px) {
+  #main-content {
+    width: 99%;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (min-width: 1300px) {
+  #main-content {
+    width: 99.2%;
+  }
+}
+
+@media (min-width: 1570px) {
+  #main-content {
+    width: 99.5%;
+  }
+}
+
+@media (max-width: 767px) {
+  #main-content {
+    width: 98.5%;
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 700px) {
+  #main-content {
+    width: 98.2%;
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 550px) {
+  #main-content {
+    width: 97.9%;
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 500px) {
+  #main-content {
+    width: 97.5%;
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  #main-content {
+    width: 97%;
+    margin-left: 6px;
   }
 }
