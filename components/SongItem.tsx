@@ -37,7 +37,7 @@ const SongItem: React.FC<SongItemProps> = ({
         transition 
         p-3
       "
-      {/* style={{ width: '275px', height: '350px' }} */}
+      // { style={{ width: '275px', height: '350px' }} }
     >
       <div 
         className="
